@@ -42,13 +42,9 @@ class _ExampleTwoState extends State<ExampleTwo> {
         title: Text('Api Second Example'),
       ),
       body: Column(
-
-
-
         children: [
           Expanded(
             child: FutureBuilder(
-
                 future: getPhotos(),
                 builder: (context,AsyncSnapshot<List<Photos>> snapshot) {
                   return ListView.builder(
